@@ -1,4 +1,5 @@
-const fs = require('fs')
+//const fs = require('fs')
+import fs from 'fs'
 class ProductManager {
     constructor(path){
         this.products = []
@@ -29,7 +30,6 @@ class ProductManager {
             console.log('not found')
         }
     }
-
     addProduct({ title,description,price,thubmnail,stock }){
         let product = { title,description,price,thubmnail,stock}
         let id = 0
@@ -79,9 +79,6 @@ class ProductManager {
     }
 }
 
-
-
-
 let producto = new ProductManager('./products.json')
 producto.addProduct({title:'Fideos', description:'Comida', price: 100, thubmnail:'', stock:50 })
 producto.addProduct({title:'Arroz', description:'Comida', price: 100, thubmnail:'', stock:35 })
@@ -93,7 +90,9 @@ producto.addProduct({title:'Huevo', description:'Ingrediente', price: 300, thubm
 producto.addProduct({title:'Aceite', description:'Ingrediente', price: 200, thubmnail:'', stock:8 })
 producto.addProduct({title:'Oro', description:'Mineral', price: 1000, thubmnail:'', stock:1 })
 producto.addProduct({title:'Plata', description:'Mineral', price: 500, thubmnail:'', stock:2 })
-producto.getProductsById(9)
-producto.updateProduct(9,{title:'Diamante' })
-producto.deleteProduct(10)
-producto.getProducts()
+//producto.getProductsById(9)
+//producto.updateProduct(9,{title:'Diamante' })
+//producto.deleteProduct(10)
+//producto.getProducts()
+
+export default producto

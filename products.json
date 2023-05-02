@@ -64,14 +64,14 @@
     "id": 8
   },
   {
-    "title": "Diamante",
+    "title": "Oro",
     "description": "Mineral",
     "price": 1000,
     "thubmnail": "",
     "stock": 1,
     "id": 9
-  }
-]  {
+  },
+  {
     "title": "Plata",
     "description": "Mineral",
     "price": 500,
