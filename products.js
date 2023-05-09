@@ -80,19 +80,5 @@ class ProductManager {
 }
 
 let producto = new ProductManager('./products.json')
-producto.addProduct({title:'Fideos', description:'Comida', price: 100, thubmnail:'', stock:50 })
-producto.addProduct({title:'Arroz', description:'Comida', price: 100, thubmnail:'', stock:35 })
-producto.addProduct({title:'Polenta', description:'Comida', price: 50, thubmnail:'', stock:13 })
-producto.addProduct({title:'Agua', description:'Bebida', price: 80, thubmnail:'', stock:33 })
-producto.addProduct({title:'Harina', description:'Ingrediente', price: 100, thubmnail:'', stock:23 })
-producto.addProduct({title:'Leche', description:'Bebida', price: 200, thubmnail:'', stock:5 })
-producto.addProduct({title:'Huevo', description:'Ingrediente', price: 300, thubmnail:'', stock:12 })
-producto.addProduct({title:'Aceite', description:'Ingrediente', price: 200, thubmnail:'', stock:8 })
-producto.addProduct({title:'Oro', description:'Mineral', price: 1000, thubmnail:'', stock:1 })
-producto.addProduct({title:'Plata', description:'Mineral', price: 500, thubmnail:'', stock:2 })
-//producto.getProductsById(9)
-//producto.updateProduct(9,{title:'Diamante' })
-//producto.deleteProduct(10)
-//producto.getProducts()
 
 export default producto
