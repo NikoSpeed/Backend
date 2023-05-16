@@ -79,6 +79,6 @@ class ProductManager {
     }
 }
 
-let producto = new ProductManager('./products.json')
+let product = new ProductManager('./src/data/products.json')
 
-export default producto
+export default product

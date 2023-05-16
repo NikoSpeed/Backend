@@ -30,16 +30,14 @@ class CartManager {
             console.log('not found')
         }
     }
-    addCart({products}){
-        let cart = {products}
-        let id = 0
-        if (this.carts.length===0) {
-            id = 1
-            cart.id = id
+    addCart(){
+        let cart = {products: []}
+
+        if (this.carts.length>0) {
+            let next_id = this.carts[this.carts.length-1].id+1
+            cart.id = next_id
         } else {
-            let lastCart = this.carts[this.carts.length-1]
-            id = lastCart.id + 1
-            cart.id = id
+            cart.id = 1
         }
         this.carts.push(cart)
         let cart_json = JSON.stringify(this.carts,null,2)
